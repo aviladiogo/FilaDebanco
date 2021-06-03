@@ -21,14 +21,14 @@ public class Main {
                     Posição++;
                     break;
                 case 2:
-                    ChamarSenha(Posição,fila);
+                    ChamarSenha(fila);
                     Posição--;
                     break;
             }
         }while (op!=0);
 
     }
-    public static  void ChamarSenha(int Posição, Queue<Integer> fila){
+    public static  void ChamarSenha(Queue<Integer> fila){
         if(fila.isEmpty()) {
             System.out.println("o Banco esta vazio");
         }else {
